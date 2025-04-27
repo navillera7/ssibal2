@@ -11,7 +11,7 @@ export default function AuthPage() {
     setError('');
 
     try {
-      const res = await fetch('/api/auth', {
+      const res = await fetch('pages/api/auth', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code }),
